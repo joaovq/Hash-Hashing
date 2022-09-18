@@ -2,7 +2,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class HashMainSHA256 {
-    public static void main(String[] args) throws NoSuchAlgorithmException {
+    public static void main(String[] args) throws NoSuchAlgorithmException, UnsupportedOperationException {
 
 //        O mais seguro é o SHA-256
         String password = "colab";
