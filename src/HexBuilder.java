@@ -1,5 +1,6 @@
 public class HexBuilder {
-    public String builder(byte[] hashDigest){
+//    Colocando a classe com estática, podemos usar o método sem instancia-la
+    public static String builder(byte[] hashDigest){
 //        Transforma o array byte[] em hexadecimal de string
         StringBuilder hexStringBuilder = new StringBuilder();
 

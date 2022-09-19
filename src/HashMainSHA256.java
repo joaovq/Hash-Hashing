@@ -12,6 +12,6 @@ public class HashMainSHA256 {
 
         byte[] digest = messageDigest.digest(password.getBytes(StandardCharsets.UTF_8));
 
-        String criptHexPassword = new HexBuilder().builder(digest);
+        String criptHexPassword = HexBuilder.builder(digest);
     }
 }

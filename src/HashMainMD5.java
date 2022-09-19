@@ -12,7 +12,7 @@ public class HashMainMD5 {
 
         byte[] digest = messageDigest.digest(bytes);
 
-        String builder = new HexBuilder().builder(digest);
+        String builder = HexBuilder.builder(digest);
 
 
     }
