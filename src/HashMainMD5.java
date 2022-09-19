@@ -1,3 +1,4 @@
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -7,7 +8,7 @@ public class HashMainMD5 {
 
         MessageDigest messageDigest = MessageDigest.getInstance("MD5");
 
-        byte[] bytes = password.getBytes();
+        byte[] bytes = password.getBytes(StandardCharsets.UTF_8);
 
         byte[] digest = messageDigest.digest(bytes);
 
